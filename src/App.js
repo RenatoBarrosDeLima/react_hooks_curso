@@ -8,7 +8,9 @@ const App = () => {
   const classReverse = reverse ? 'reverse' : '';
 
   const handleClick = () => {
-    setReverse(!reverse);
+    // setReverse(!reverse);
+    // Outra forma do useState, usando o callBack do valor atual da função
+    setReverse((prevCounter) => !prevCounter);
   };
 
   const handleIncremente = () => {

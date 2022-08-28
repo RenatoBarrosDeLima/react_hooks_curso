@@ -12,7 +12,9 @@ const App = () => {
   };
 
   const handleIncremente = () => {
-    setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // Outra forma do useState, usando o callBack do valor atual da função
+    setCounter((prevCounter) => prevCounter + 1);
   };
 
   return (
